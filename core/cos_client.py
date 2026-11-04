@@ -34,8 +34,8 @@ def _get_cos():
         return None
 
     try:
-        import ibm_boto3
-        from ibm_botocore.client import Config
+        import ibm_boto3  # provided by ibm-cos-sdk
+        from ibm_botocore.client import Config  # provided by ibm-cos-sdk
 
         _cos_client = ibm_boto3.client(
             "s3",

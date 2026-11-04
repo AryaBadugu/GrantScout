@@ -1,35 +1,35 @@
 # ── IBM watsonx.ai ──────────────────────────────────────────────────────────
 ibm-watsonx-ai>=1.1.0
-ibm-boto3>=2.0.0
+# IBM Cloud Object Storage SDK (ibm-boto3 does NOT exist on PyPI)
+ibm-cos-sdk>=2.13.0
 
 # ── Vector store ────────────────────────────────────────────────────────────
 chromadb>=0.5.0
 
-# ── Document parsing ────────────────────────────────────────────────────────
-# docling-core is the lightweight schema/utility layer only (no PyTorch/ML models).
-# Actual parsing uses pdfplumber + python-docx + beautifulsoup4 via _fallback_parse.
-# Full docling (2.x) pulls PyTorch + easyocr and exceeds Streamlit Cloud limits.
-docling-core>=2.0.0,<3.0.0
+# ── Document parsing (lightweight — no PyTorch/ML models) ───────────────────
 pdfplumber>=0.11.0
 python-docx>=1.1.0
 beautifulsoup4>=4.12.0
+lxml>=4.9.0
 
 # ── Streamlit + UI ──────────────────────────────────────────────────────────
 streamlit>=1.35.0
 plotly>=5.0.0
-# Pin websockets to avoid the 17.x websocket handshake breakage with Streamlit
 websockets==16.1.1
 
 # ── Data / utils ────────────────────────────────────────────────────────────
 pydantic>=2.6.0
+pydantic-settings>=2.0.0
 python-dotenv>=1.0.0
 pandas>=2.0.0
 tabulate>=0.9.0
 requests>=2.31.0
+pillow>=10.0.0
 
 # ── Export ──────────────────────────────────────────────────────────────────
 reportlab>=4.0.0
 icalendar>=5.0.0
+python-docx>=1.1.0
 
 # ── Matplotlib (eval charts) ────────────────────────────────────────────────
 matplotlib>=3.8.0
