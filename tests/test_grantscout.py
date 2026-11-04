@@ -307,14 +307,28 @@ class TestExtractionParsing:
 
 class TestConfig:
     def test_validate_watsonx_raises_without_credentials(self):
+        import os
         from core.config import validate_watsonx
         import core.config as cfg
 
-        original_key = cfg.WATSONX_API_KEY
-        cfg.WATSONX_API_KEY = ""
-        with pytest.raises(ValueError, match="WATSONX_API_KEY"):
-            validate_watsonx()
-        cfg.WATSONX_API_KEY = original_key
+        # Blank out both the module constant AND the env var so both
+        # the constant path and the getter path return empty strings.
+        original_key    = cfg.WATSONX_API_KEY
+        original_proj   = cfg.WATSONX_PROJECT_ID
+        original_env_k  = os.environ.pop("WATSONX_API_KEY", "")
+        original_env_p  = os.environ.pop("WATSONX_PROJECT_ID", "")
+        cfg.WATSONX_API_KEY   = ""
+        cfg.WATSONX_PROJECT_ID = ""
+        try:
+            with pytest.raises(ValueError, match="WATSONX_API_KEY"):
+                validate_watsonx()
+        finally:
+            cfg.WATSONX_API_KEY    = original_key
+            cfg.WATSONX_PROJECT_ID = original_proj
+            if original_env_k:
+                os.environ["WATSONX_API_KEY"]    = original_env_k
+            if original_env_p:
+                os.environ["WATSONX_PROJECT_ID"] = original_env_p
 
     def test_model_ids_configurable(self):
         from core.config import GRANITE_INSTRUCT_MODEL, GRANITE_EMBEDDING_MODEL

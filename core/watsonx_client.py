@@ -18,14 +18,14 @@ from ibm_watsonx_ai.foundation_models.embeddings import Embeddings
 from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
 
 from core.config import (
-    WATSONX_API_KEY,
-    WATSONX_URL,
-    WATSONX_PROJECT_ID,
-    GRANITE_INSTRUCT_MODEL,
-    GRANITE_EMBEDDING_MODEL,
     LLM_MAX_NEW_TOKENS,
     LLM_TEMPERATURE,
     validate_watsonx,
+    get_watsonx_api_key,
+    get_watsonx_url,
+    get_watsonx_project_id,
+    get_granite_instruct_model,
+    get_granite_embedding_model,
 )
 
 logger = logging.getLogger(__name__)
@@ -33,20 +33,21 @@ logger = logging.getLogger(__name__)
 
 @lru_cache(maxsize=1)
 def _credentials() -> Credentials:
-    """Return cached IBM Cloud credentials."""
+    """Return cached IBM Cloud credentials (read fresh so st.secrets is available)."""
     validate_watsonx()
-    return Credentials(url=WATSONX_URL, api_key=WATSONX_API_KEY)
+    return Credentials(url=get_watsonx_url(), api_key=get_watsonx_api_key())
 
 
 @lru_cache(maxsize=1)
 def get_llm() -> ModelInference:
     """Return a cached ModelInference instance for Granite instruct."""
     creds = _credentials()
-    logger.info("Initialising Granite instruct model: %s", GRANITE_INSTRUCT_MODEL)
+    model_id = get_granite_instruct_model()
+    logger.info("Initialising Granite instruct model: %s", model_id)
     return ModelInference(
-        model_id=GRANITE_INSTRUCT_MODEL,
+        model_id=model_id,
         credentials=creds,
-        project_id=WATSONX_PROJECT_ID,
+        project_id=get_watsonx_project_id(),
         params={
             GenParams.MAX_NEW_TOKENS: LLM_MAX_NEW_TOKENS,
             GenParams.TEMPERATURE: LLM_TEMPERATURE,
@@ -58,11 +59,12 @@ def get_llm() -> ModelInference:
 def get_embedder() -> Embeddings:
     """Return a cached Embeddings instance for Granite embedding."""
     creds = _credentials()
-    logger.info("Initialising Granite embedding model: %s", GRANITE_EMBEDDING_MODEL)
+    model_id = get_granite_embedding_model()
+    logger.info("Initialising Granite embedding model: %s", model_id)
     return Embeddings(
-        model_id=GRANITE_EMBEDDING_MODEL,
+        model_id=model_id,
         credentials=creds,
-        project_id=WATSONX_PROJECT_ID,
+        project_id=get_watsonx_project_id(),
     )
 
 
