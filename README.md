@@ -1,7 +1,14 @@
 # 🔍 GrantScout — AI Grant & Funding Finder for Indian Startups
 
-> **Problem Statement #18 – AI Grant and Funding Finder for Startups**  
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-grant--scout.streamlit.app-1565C0?style=for-the-badge)](https://grant-scout.streamlit.app/)
+[![IBM Granite](https://img.shields.io/badge/IBM-Granite%204H--Small-054ADA?style=for-the-badge&logo=ibm)](https://www.ibm.com/watsonx)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python)](https://python.org)
+[![Tests](https://img.shields.io/badge/Tests-41%20passing-2e7d32?style=for-the-badge)](#)
+
+> **Problem Statement #18 – AI Grant and Funding Finder for Startups**
 > Built with IBM Granite on watsonx.ai (IBM Cloud Lite)
+
+🌐 **Live App:** [https://grant-scout.streamlit.app/](https://grant-scout.streamlit.app/)
 
 GrantScout is an **agentic RAG system** that helps Indian startups discover government grants, check eligibility, and draft applications — powered entirely by IBM Granite models and watsonx.ai on the free Lite tier.
 
