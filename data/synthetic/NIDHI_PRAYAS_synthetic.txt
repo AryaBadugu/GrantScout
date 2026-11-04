@@ -1,0 +1,28 @@
+NIDHI PRAYAS GRANT - DST - SYNTHETIC SAMPLE
+[SYNTHETIC DATA FOR TESTING ONLY - NOT A REAL DOCUMENT]
+
+Scheme Name: NIDHI-PRAYAS (Promoting and Accelerating Young and Aspiring Innovators & Startups)
+Issuing Body: Department of Science and Technology (DST), National Science and Technology Entrepreneurship Development Board (NSTEDB)
+Funding Amount: Up to ₹10 lakh per innovator/team (grant for prototype development)
+Eligible Stages: Ideation, Prototype
+Sectors: Technology-led innovations – deeptech, cleantech, agritech, healthtech, manufacturing, any science and technology domain
+Location: Pan-India (through DST-approved host institutions / incubators)
+Application Link: https://www.dst.gov.in/nidhi
+
+Eligibility Criteria:
+1. Individual innovators, students, or startup teams with a technology idea
+2. Must not be an existing startup (pre-incorporation stage preferred)
+3. Must be affiliated with or apply through a DST-NIDHI approved incubator/host institution
+4. Technology must have clear commercial potential
+5. Not more than 51% funding from other Central Government schemes for the same idea
+6. Indian citizen(s) as primary applicant
+
+Required Documents:
+1. Detailed innovation/project proposal
+2. Prototype plan and milestones
+3. CV of team members
+4. Letter of recommendation from host institution
+5. IP assessment (if any existing IP)
+
+Deadline: Announced per cohort by the host incubator. Typically 2-3 cohorts per year.
+Note: This is a SYNTHETIC document for testing purposes only. Always verify on the official DST/NIDHI portal.

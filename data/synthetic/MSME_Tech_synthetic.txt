@@ -1,0 +1,29 @@
+MSME TECHNOLOGY CENTRE SUPPORT SCHEME - SYNTHETIC SAMPLE
+[SYNTHETIC DATA FOR TESTING ONLY - NOT A REAL DOCUMENT]
+
+Scheme Name: MSME Technology Upgradation Support Scheme
+Issuing Body: Ministry of Micro, Small and Medium Enterprises (MSME), Government of India
+Funding Amount: Up to ₹1 crore (50% subsidy on technology upgradation investment, max ₹1 crore per unit)
+Eligible Stages: Early-stage, Growth, Scaling
+Sectors: Manufacturing, Deeptech, Any (preference to traditional industries adopting new tech)
+Location: Pan-India (additional preference to aspirational districts)
+Application Link: https://msme.gov.in/
+
+Eligibility Criteria:
+1. Must be a registered MSME (Udyam Registration mandatory)
+2. Annual turnover not exceeding ₹250 crore
+3. Must not have availed similar benefit under any Central Government scheme in last 3 years
+4. Technology to be adopted must result in at least 20% energy or productivity improvement
+5. Startup/MSME must be in operation for at least 1 year
+
+Required Documents:
+1. Udyam Registration Certificate
+2. Detailed Project Report (DPR)
+3. Last 2 years audited financial statements
+4. Bank solvency certificate
+5. Quotations from technology providers
+6. PAN and GST registration
+7. Board resolution (for companies)
+
+Deadline: Applications accepted on rolling basis. Subject to annual budget availability.
+Note: This is a SYNTHETIC document for testing purposes only. Always verify on the official MSME portal.

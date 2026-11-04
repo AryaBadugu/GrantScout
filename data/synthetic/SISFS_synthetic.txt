@@ -1,0 +1,31 @@
+STARTUP INDIA SEED FUND SCHEME (SISFS) - SYNTHETIC SAMPLE
+[SYNTHETIC DATA FOR TESTING ONLY - NOT A REAL DOCUMENT]
+
+Scheme Name: Startup India Seed Fund Scheme (SISFS)
+Issuing Body: Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce and Industry, Government of India
+Funding Amount: Up to ₹50 lakh (equity-free grant up to ₹20 lakh for proof of concept; up to ₹50 lakh for prototype development and trials)
+Eligible Stages: Ideation, Prototype, Early-stage
+Sectors: Any sector (preference to deeptech, agritech, healthtech, cleantech, edtech, social impact)
+Location: Pan-India
+Application Link: https://seedfund.startupindia.gov.in/
+
+Eligibility Criteria:
+1. Startup must be recognized by DPIIT under Startup India
+2. Startup should be incorporated not more than 2 years ago at time of application
+3. Startup must have a business idea to develop a product or service with market fit, viable commercialization, and scalability
+4. Startup must not have received more than ₹10 lakh in monetary support from Central or State Government schemes
+5. Promoters of the startup must hold at least 51% shareholding in the startup
+6. The startup must not have been funded by a Venture Capital firm, angel network, private equity firm, or incubator
+
+Required Documents:
+1. DPIIT recognition certificate
+2. Certificate of incorporation
+3. Detailed project/business plan
+4. Pitch deck (10-15 slides)
+5. Financial projections (3-year)
+6. Aadhar and PAN of founders
+7. Bank account details of the startup
+
+Deadline: Rolling basis – applications accepted throughout the year. Check official portal for cohort deadlines.
+Application Process: Apply through registered incubators under SISFS. List of approved incubators available on the official website.
+Note: This is a SYNTHETIC document for testing purposes only. Always verify all details on the official Startup India portal.

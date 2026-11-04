@@ -1,0 +1,88 @@
+[
+  {
+    "profile": {
+      "name": "AgroAI",
+      "stage": "prototype",
+      "sector": "agritech",
+      "state": "Maharashtra",
+      "team_size": 3,
+      "annual_revenue_inr": 0,
+      "dpiit_recognized": true,
+      "funding_needed_inr": 2000000,
+      "description": "AI-powered crop disease detection for smallholder farmers using smartphone cameras."
+    },
+    "expected_grants": [
+      "Startup India Seed Fund Scheme (SISFS)",
+      "NIDHI-PRAYAS",
+      "Maharashtra Startup Week / MSInS Innovation Grant"
+    ]
+  },
+  {
+    "profile": {
+      "name": "BioHeal",
+      "stage": "ideation",
+      "sector": "healthtech",
+      "state": "Karnataka",
+      "team_size": 2,
+      "annual_revenue_inr": 0,
+      "dpiit_recognized": false,
+      "funding_needed_inr": 3000000,
+      "description": "Low-cost diagnostic kit for early tuberculosis detection using CRISPR technology."
+    },
+    "expected_grants": [
+      "Biotechnology Ignition Grant (BIG)",
+      "NIDHI-PRAYAS"
+    ]
+  },
+  {
+    "profile": {
+      "name": "GreenMake",
+      "stage": "growth",
+      "sector": "manufacturing",
+      "state": "Gujarat",
+      "team_size": 25,
+      "annual_revenue_inr": 5000000,
+      "dpiit_recognized": true,
+      "funding_needed_inr": 8000000,
+      "description": "Sustainable packaging manufacturer using agricultural waste as raw material."
+    },
+    "expected_grants": [
+      "MSME Technology Upgradation Support Scheme",
+      "SIDBI Fund of Funds for Startups (FFS)"
+    ]
+  },
+  {
+    "profile": {
+      "name": "EduReach",
+      "stage": "early_stage",
+      "sector": "edtech",
+      "state": "Rajasthan",
+      "team_size": 6,
+      "annual_revenue_inr": 500000,
+      "dpiit_recognized": true,
+      "funding_needed_inr": 4000000,
+      "description": "Offline-first vernacular language learning platform for rural school students."
+    },
+    "expected_grants": [
+      "Startup India Seed Fund Scheme (SISFS)",
+      "SIDBI Fund of Funds for Startups (FFS)"
+    ]
+  },
+  {
+    "profile": {
+      "name": "CleanWater",
+      "stage": "prototype",
+      "sector": "cleantech",
+      "state": "Uttar Pradesh",
+      "team_size": 4,
+      "annual_revenue_inr": 0,
+      "dpiit_recognized": false,
+      "funding_needed_inr": 1000000,
+      "description": "Low-cost water purification using biochar filters made from rice husk for rural households."
+    },
+    "expected_grants": [
+      "NIDHI-PRAYAS",
+      "Biotechnology Ignition Grant (BIG)"
+    ]
+  }
+]

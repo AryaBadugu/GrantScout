@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  grantscout:
+    build: .
+    image: grantscout:latest
+    container_name: grantscout
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data               # persist grant documents
+      - .chroma_db:/app/.chroma_db     # persist vector store
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

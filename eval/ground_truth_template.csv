@@ -1,0 +1,2 @@
+name,issuing_body,funding_amount_inr,deadline_date,eligible_stages,sectors,location_restrictions
+[Grant Official Name],,[numeric INR amount],[YYYY-MM-DD or blank if rolling],[comma-separated stages: ideation/prototype/early_stage/growth/scaling/any],[comma-separated sectors],[State name or Pan-India or blank]

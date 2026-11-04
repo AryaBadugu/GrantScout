@@ -1,0 +1,7 @@
+name,issuing_body,funding_amount_inr,deadline_date,eligible_stages,sectors,location_restrictions
+Startup India Seed Fund Scheme (SISFS),Department for Promotion of Industry and Internal Trade (DPIIT),5000000,,ideation,prototype,early_stage,"any",
+Biotechnology Ignition Grant (BIG),Biotechnology Industry Research Assistance Council (BIRAC),5000000,,ideation,prototype,"healthtech,biotech,agritech",
+MSME Technology Upgradation Support Scheme,Ministry of Micro Small and Medium Enterprises (MSME),10000000,,early_stage,growth,scaling,"manufacturing,any",
+SIDBI Fund of Funds for Startups (FFS),Small Industries Development Bank of India (SIDBI),100000000,,early_stage,growth,scaling,"any",
+NIDHI-PRAYAS,Department of Science and Technology (DST),1000000,,ideation,prototype,"deeptech,cleantech,agritech,healthtech",
+Maharashtra Startup Week / MSInS Innovation Grant,Maharashtra State Innovation Society (MSInS),1500000,,ideation,prototype,early_stage,"any","Maharashtra"

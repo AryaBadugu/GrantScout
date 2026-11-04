@@ -1,0 +1,29 @@
+SIDBI STARTUP MITRA - FUND OF FUNDS - SYNTHETIC SAMPLE
+[SYNTHETIC DATA FOR TESTING ONLY - NOT A REAL DOCUMENT]
+
+Scheme Name: SIDBI Fund of Funds for Startups (FFS)
+Issuing Body: Small Industries Development Bank of India (SIDBI) / Department for Promotion of Industry and Internal Trade (DPIIT)
+Funding Amount: Up to ₹10 crore (via Alternative Investment Funds; SIDBI commits ₹5,000 crore corpus)
+Eligible Stages: Early-stage, Growth, Scaling
+Sectors: Any sector recognized under Startup India
+Location: Pan-India
+Application Link: https://www.sidbi.in/en/products-schemes/startup-ecosystem
+
+Eligibility Criteria:
+1. Startup must be DPIIT recognized
+2. Must be incorporated in India (Private Limited, LLP, or Partnership)
+3. No direct funding – investment routed via SEBI-registered Alternative Investment Funds (AIFs)
+4. AIFs applying must demonstrate portfolio of Indian startups
+5. Startup must not be in prohibited/restricted sectors (gambling, tobacco, real estate speculation)
+6. Age of startup: Not older than 10 years from date of incorporation
+
+Required Documents (for AIF route):
+1. DPIIT recognition certificate
+2. Certificate of incorporation
+3. Term sheet from AIF
+4. Cap table and shareholder agreement
+5. Last 2 years financials (if available)
+6. Business plan and financial projections
+
+Deadline: Continuous basis through registered AIFs. No fixed annual deadline.
+Note: This is a SYNTHETIC document for testing purposes only. Always verify on the official SIDBI portal.

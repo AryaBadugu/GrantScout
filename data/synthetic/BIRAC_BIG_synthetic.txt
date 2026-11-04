@@ -1,0 +1,30 @@
+BIRAC BIOTECHNOLOGY IGNITION GRANT (BIG) - SYNTHETIC SAMPLE
+[SYNTHETIC DATA FOR TESTING ONLY - NOT A REAL DOCUMENT]
+
+Scheme Name: Biotechnology Ignition Grant (BIG)
+Issuing Body: Biotechnology Industry Research Assistance Council (BIRAC), Department of Biotechnology, Government of India
+Funding Amount: Up to ₹50 lakh (non-dilutive grant)
+Eligible Stages: Ideation, Prototype
+Sectors: Healthtech, Biotech, Agritech, Cleantech, Deeptech (life sciences focus)
+Location: Pan-India
+Application Link: https://birac.nic.in/
+
+Eligibility Criteria:
+1. Indian Biotech startups or individuals/teams with an innovative biotechnology idea
+2. Startup should be DPIIT recognized or equivalent
+3. Must not have received prior BIG funding
+4. Technology should have clear societal impact
+5. Founder/team must have relevant scientific or technical background
+6. Startup must be less than 5 years old
+
+Required Documents:
+1. Detailed project proposal (as per BIG format)
+2. CV of principal investigator and co-investigators
+3. Budget breakdown
+4. Organizational profile / incorporation certificate
+5. Intellectual property status (if any)
+6. Letters of support from host institution (if applicable)
+
+Funding Covers: Salary, consumables, equipment (up to 30%), travel, overheads
+Deadline: Announced per call. Check BIRAC website for current open calls.
+Note: This is a SYNTHETIC document for testing purposes only. Always verify on the official BIRAC portal.

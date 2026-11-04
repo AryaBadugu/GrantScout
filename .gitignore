@@ -1,0 +1,32 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Secrets — never commit your real .env
+.env
+
+# ChromaDB local vector store (rebuilt on first run)
+.chroma_db/
+
+# Grant PDFs (download separately per data/grants/README.md)
+data/grants/*.pdf
+data/grants/*.docx
+data/grants/*.txt
+
+# Eval outputs
+eval/results/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/

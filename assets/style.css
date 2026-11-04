@@ -1,0 +1,246 @@
+/* GrantScout – Global styles injected via st.markdown */
+
+/* ── Typography & base ─────────────────────────────────────── */
+html, body, [class*="css"] {
+  font-family: -apple-system, "Segoe UI", system-ui, "IBM Plex Sans", sans-serif !important;
+}
+
+/* ── Hide Streamlit chrome ──────────────────────────────────── */
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+header    { visibility: hidden; }
+
+/* ── Hero banner ────────────────────────────────────────────── */
+.gs-hero {
+  background: linear-gradient(135deg, #0F3460 0%, #1565C0 60%, #1976D2 100%);
+  border-radius: 16px;
+  padding: 36px 40px 32px;
+  color: #fff;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.gs-hero::after {
+  content: "";
+  position: absolute;
+  right: -40px; top: -40px;
+  width: 240px; height: 240px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+}
+.gs-hero h1 {
+  font-size: 2rem; font-weight: 800;
+  margin: 0 0 6px; color: #fff !important;
+  letter-spacing: -0.5px;
+}
+.gs-hero .tagline {
+  font-size: 1.05rem; opacity: 0.88; margin-bottom: 18px;
+}
+.gs-hero .stat-row { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 16px; }
+.gs-hero .stat-box {
+  background: rgba(255,255,255,0.14); border-radius: 10px;
+  padding: 10px 18px; text-align: center; min-width: 110px;
+}
+.gs-hero .stat-num  { font-size: 1.6rem; font-weight: 800; }
+.gs-hero .stat-label{ font-size: 0.7rem; opacity: 0.8; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* ── Stepper ─────────────────────────────────────────────────── */
+.gs-stepper { display: flex; align-items: center; gap: 0; margin-bottom: 24px; }
+.gs-step {
+  display: flex; align-items: center; gap: 8px;
+  flex: 1; font-size: 12px; font-weight: 600;
+  color: #9099A6; position: relative;
+}
+.gs-step.done   { color: #1565C0; }
+.gs-step.active { color: #1565C0; }
+.gs-step-dot {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: #E0E7EF; color: #9099A6;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; flex-shrink: 0; z-index: 1;
+}
+.gs-step.done   .gs-step-dot { background: #1565C0; color: #fff; }
+.gs-step.active .gs-step-dot { background: #1565C0; color: #fff; box-shadow: 0 0 0 3px rgba(21,101,192,0.25); }
+.gs-step-line {
+  flex: 1; height: 2px; background: #E0E7EF; margin: 0 -4px;
+}
+.gs-step-line.done { background: #1565C0; }
+
+/* ── KPI Row ─────────────────────────────────────────────────── */
+.kpi-row { display: flex; gap: 14px; margin-bottom: 20px; flex-wrap: wrap; }
+.kpi-card {
+  flex: 1; min-width: 140px;
+  background: #F4F6FB; border: 1px solid #DDE3EE;
+  border-radius: 12px; padding: 14px 18px;
+}
+.kpi-card .kpi-val {
+  font-size: 1.7rem; font-weight: 800; color: #1565C0; line-height: 1.1;
+}
+.kpi-card .kpi-sub { font-size: 11px; color: #6B7890; margin-top: 2px; }
+.kpi-card.urgent .kpi-val { color: #D32F2F; }
+.kpi-card.amber  .kpi-val { color: #E65100; }
+
+/* ── Match cards ─────────────────────────────────────────────── */
+.match-card {
+  border: 1px solid #DDE3EE; border-radius: 14px;
+  padding: 20px 22px; margin-bottom: 16px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: box-shadow 0.15s;
+}
+.match-card:hover { box-shadow: 0 4px 16px rgba(21,101,192,0.12); }
+.match-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.match-card h3 { font-size: 15px; font-weight: 700; color: #0F3460; margin: 0 0 2px; }
+.match-card .issuer { font-size: 12px; color: #6B7890; }
+
+/* Score badge */
+.score-badge {
+  min-width: 54px; height: 54px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 800; color: #fff; flex-shrink: 0;
+}
+.score-high   { background: #1B5E20; }
+.score-medium { background: #E65100; }
+.score-low    { background: #B71C1C; }
+
+/* Tag chips */
+.chip {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  padding: 2px 9px; border-radius: 20px; margin: 2px 3px 2px 0;
+}
+.chip-blue   { background: #E3F0FF; color: #1565C0; }
+.chip-green  { background: #E8F5E9; color: #1B5E20; }
+.chip-purple { background: #EDE7F6; color: #4527A0; }
+.chip-amber  { background: #FFF3E0; color: #E65100; }
+.chip-red    { background: #FFEBEE; color: #B71C1C; }
+.chip-gray   { background: #ECEFF1; color: #37474F; }
+
+/* Deadline urgency */
+.deadline-urgent { color: #B71C1C; font-weight: 700; }
+.deadline-soon   { color: #E65100; font-weight: 700; }
+.deadline-ok     { color: #1B5E20; font-weight: 700; }
+.deadline-na     { color: #9099A6; }
+
+/* ── Streamlit tab active-border fix ────────────────────────── */
+/* Remove the default red/primary underline artifact on active tabs */
+.stTabs [data-baseweb="tab-list"] {
+  gap: 4px;
+  border-bottom: 2px solid #DDE3EE !important;
+}
+.stTabs [data-baseweb="tab"] {
+  border-radius: 8px 8px 0 0;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #6B7890;
+  border: none !important;
+}
+.stTabs [aria-selected="true"] {
+  background: #fff !important;
+  color: #1565C0 !important;
+  border-bottom: 3px solid #1565C0 !important;
+}
+
+/* ── Suggested-question chips — clean wrap ───────────────────── */
+.suggested-q {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+.sq-chip {
+  background: #F4F6FB;
+  border: 1px solid #DDE3EE;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: #1565C0;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ── Mobile-friendly responsive overrides ────────────────────── */
+@media (max-width: 768px) {
+  .gs-hero { padding: 20px 16px; }
+  .gs-hero h1 { font-size: 1.4rem; }
+  .gs-hero .stat-row { gap: 10px; }
+  .gs-hero .stat-box { min-width: 80px; padding: 8px 10px; }
+  .gs-hero .stat-num { font-size: 1.2rem; }
+  .kpi-row { flex-direction: column; gap: 8px; }
+  .kpi-card { min-width: 100%; }
+  .gs-stepper { flex-wrap: wrap; gap: 4px; }
+  .gs-step-line { display: none; }
+  .match-card { padding: 14px 14px; }
+  .feat-grid, .ps-grid, .rai-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Chat bubbles ────────────────────────────────────────────── */
+.chat-wrap { display: flex; flex-direction: column; gap: 14px; }
+.bubble { max-width: 82%; padding: 12px 16px; border-radius: 14px; font-size: 14px; line-height: 1.5; }
+.bubble-user { background: #1565C0; color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
+.bubble-bot  { background: #F4F6FB; color: #1A1A2E; align-self: flex-start; border-bottom-left-radius: 4px; border: 1px solid #DDE3EE; }
+.bubble-citation { font-size: 11px; color: #6B7890; margin-top: 6px; display: flex; flex-wrap: wrap; gap: 4px; }
+.citation-chip {
+  background: #E3F0FF; color: #1565C0; border-radius: 10px;
+  padding: 2px 8px; font-size: 11px; font-weight: 600; cursor: pointer;
+}
+/* ── Draft split view ────────────────────────────────────────── */
+.draft-req { background: #F4F6FB; border-radius: 12px; padding: 16px; font-size: 13px; height: 100%; }
+.draft-req h4 { color: #0F3460; font-size: 14px; font-weight: 700; margin-bottom: 10px; }
+.draft-checklist-item { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 6px; font-size: 12px; }
+.draft-progress { margin: 14px 0 10px; }
+.draft-progress-label { font-size: 12px; color: #6B7890; margin-bottom: 4px; }
+.draft-progress-bar { height: 6px; background: #DDE3EE; border-radius: 4px; overflow: hidden; }
+.draft-progress-fill { height: 6px; background: #1565C0; border-radius: 4px; transition: width 0.3s; }
+.word-count { font-size: 11px; color: #9099A6; text-align: right; margin-top: 4px; }
+
+/* ── Status panel ────────────────────────────────────────────── */
+.status-panel { background: #F4F6FB; border: 1px solid #DDE3EE; border-radius: 12px; padding: 16px 18px; }
+.status-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid #EEF1F7; font-size: 13px; }
+.status-row:last-child { border-bottom: none; }
+.dot-ok  { width:10px; height:10px; border-radius:50%; background:#1B5E20; display:inline-block; flex-shrink:0; }
+.dot-err { width:10px; height:10px; border-radius:50%; background:#B71C1C; display:inline-block; flex-shrink:0; }
+.dot-warn{ width:10px; height:10px; border-radius:50%; background:#E65100; display:inline-block; flex-shrink:0; }
+
+/* ── Kanban ──────────────────────────────────────────────────── */
+.kanban-col { background: #F4F6FB; border-radius: 12px; padding: 12px; min-height: 200px; }
+.kanban-col-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: #6B7890; margin-bottom: 10px; }
+.kanban-card { background: #fff; border: 1px solid #DDE3EE; border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; font-size: 13px; }
+.kanban-card-name { font-weight: 700; color: #0F3460; }
+.kanban-card-meta { font-size: 11px; color: #6B7890; margin-top: 3px; }
+
+/* ── Footer ──────────────────────────────────────────────────── */
+.gs-footer {
+  margin-top: 40px; padding: 14px 0; border-top: 1px solid #DDE3EE;
+  text-align: center; font-size: 11px; color: #9099A6;
+}
+
+/* ── Confidence badge ────────────────────────────────────────── */
+.conf-high   { color: #1B5E20; font-weight: 700; }
+.conf-medium { color: #E65100; font-weight: 700; }
+.conf-low    { color: #B71C1C; font-weight: 700; }
+
+/* ── Empty state ─────────────────────────────────────────────── */
+.empty-state {
+  text-align: center; padding: 48px 24px; color: #9099A6;
+  background: #F9FAFB; border: 2px dashed #DDE3EE; border-radius: 14px;
+}
+.empty-state .es-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.empty-state h3 { font-size: 16px; color: #37474F; margin-bottom: 6px; }
+.empty-state p  { font-size: 13px; }
+
+/* ── Section header ──────────────────────────────────────────── */
+.section-header {
+  font-size: 18px; font-weight: 800; color: #0F3460;
+  border-left: 4px solid #1565C0; padding-left: 12px;
+  margin: 24px 0 16px;
+}
+
+/* ── Resp AI banner ──────────────────────────────────────────── */
+.rai-banner {
+  background: #EDE7F6; border: 1px solid #B39DDB; border-radius: 10px;
+  padding: 10px 14px; font-size: 12px; color: #4527A0; margin: 8px 0;
+}

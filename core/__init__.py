@@ -1,0 +1,3 @@
+"""
+GrantScout core package init.
+"""
