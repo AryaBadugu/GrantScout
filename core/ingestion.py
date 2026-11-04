@@ -46,45 +46,14 @@ def _get_chroma_collection() -> chromadb.Collection:
 
 def _parse_with_docling(file_path: Path) -> list[dict[str, Any]]:
     """
-    Parse a document with Docling and return a list of
-    {'text': str, 'page': int | None} dicts.
-    Falls back to plain text reading for .txt files.
+    Parse a document and return a list of {'text': str, 'page': int | None} dicts.
+
+    Uses pdfplumber / python-docx / beautifulsoup4 directly — the full Docling
+    ML stack (PyTorch + easyocr) is not installed on Streamlit Cloud due to
+    memory limits.  For local development with full Docling installed the
+    original DocumentConverter path can be re-enabled here.
     """
-    suffix = file_path.suffix.lower()
-
-    if suffix == ".txt":
-        pages = []
-        text = file_path.read_text(encoding="utf-8", errors="replace")
-        pages.append({"text": text, "page": 1})
-        return pages
-
-    try:
-        from docling.document_converter import DocumentConverter
-
-        converter = DocumentConverter()
-        result = converter.convert(str(file_path))
-        doc = result.document
-
-        # Collect text grouped by page
-        pages: list[dict[str, Any]] = []
-        for element, _level in doc.iterate_items():
-            text = getattr(element, "text", None)
-            if not text or not text.strip():
-                continue
-            prov = getattr(element, "prov", None)
-            page_no: int | None = None
-            if prov:
-                # prov may be a list of ProvenanceItem
-                if hasattr(prov, "__iter__"):
-                    for p in prov:
-                        if hasattr(p, "page_no"):
-                            page_no = p.page_no
-                            break
-            pages.append({"text": text.strip(), "page": page_no})
-        return pages
-    except Exception as exc:
-        logger.warning("Docling failed for %s: %s – trying fallback.", file_path.name, exc)
-        return _fallback_parse(file_path)
+    return _fallback_parse(file_path)
 
 
 def _fallback_parse(file_path: Path) -> list[dict[str, Any]]:

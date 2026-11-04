@@ -6,9 +6,10 @@ ibm-boto3>=2.0.0
 chromadb>=0.5.0
 
 # ── Document parsing ────────────────────────────────────────────────────────
-# Pin docling to avoid pulling multi-GB ML model weights at deploy time.
-# The app uses Docling for PDF/DOCX; .txt files are read directly.
-docling>=2.0.0,<3.0.0
+# docling-core is the lightweight schema/utility layer only (no PyTorch/ML models).
+# Actual parsing uses pdfplumber + python-docx + beautifulsoup4 via _fallback_parse.
+# Full docling (2.x) pulls PyTorch + easyocr and exceeds Streamlit Cloud limits.
+docling-core>=2.0.0,<3.0.0
 pdfplumber>=0.11.0
 python-docx>=1.1.0
 beautifulsoup4>=4.12.0
